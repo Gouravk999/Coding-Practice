@@ -1,0 +1,24 @@
+Write a program to print Fibonacci Series
+//Fibonacci Series = 0,1,1,2,3,5,8,13........n
+//The first number will be 0 and second number will be 1now keep on adding the previous 2 numbers to form Fibonacci Series.
+
+***********************************************************************************************
+import java.util.Scanner;
+
+public class Fibonacci_Series {
+
+	public static void main(String[] args) {
+		int term,a=0,b=1,c;
+		System.out.println("Enter term");
+		Scanner sc = new Scanner(System.in);
+		term=sc.nextInt();
+		for(int i=1;i<=term;i++)
+		{
+			System.out.print(a+" ");
+			c=a+b;
+			a=b;
+			b=c;
+		}
+	}
+}
+************************************************************************************************
