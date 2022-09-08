@@ -1,0 +1,29 @@
+Write a program to check if the number is Palindrome or not
+//For Example- 121 is a palindrome no. as after reversing the no. we get same output
+***********************************************************************************
+import java.util.Scanner;
+
+public class Palindrome {
+	public static void main(String[] args) {
+		int n,r,org,s=0;
+		System.out.println("Enter a Number");
+		Scanner sc = new Scanner(System.in);
+		n=sc.nextInt();
+		org = n;
+		while(n>0)
+		{
+			r=n%10;
+			s=s*10+r;
+			n=n/10;
+		}
+			if (org==s)
+			{
+				System.out.println("Palindrome Number");
+			}
+			else
+			{
+				System.out.println("Not Palindrome");
+			}
+		}
+}
+****************************************************************************************
